@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block Content %}
+<div class="mt-5 ">
+  <div class="text-center">
+    <img src="{% static 'core/images/pic1.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="100px">
+  </div>
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-white-bold st-font">Hallo,</h1>
+    <div class="px-4" style="line-height:2rem;">
+      <p style="text-indent:100px">I am <b class="text-warning">Sonam Kashyap </b>
+        having 6 year of full-stack web development exprience foir global businesses, I offer the technical esperties
+        you are seeking for your web development position</p>
+      <p>Since earing my bachelor's degree in internet and web development fro xyz University, I have served as a web
+        developer at <b class="text-warning">Gs Technology</b>, one of biggest premier digital marketing and web
+        development firm. In this position, I have lead web development projects for clients in diverse industries
+        including technology, manufacturuing , pharmaceutical, hospitality, reteil and financial Services </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio corrupti ullam inventore facilis sit,
+        ad minima, commodi ipsa quam rem? Corrupti adipisci quia vel ipsa dolorum consequuntur aut provident!</p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning m-4">Hire me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info m-4">Contact</a>
+  </div>
+</div>
+{% endblock Content %}
